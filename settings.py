@@ -4,7 +4,11 @@ import sys
 from dotenv import load_dotenv
 import pathlib
 
+from classes.QueueInfo import QueueInfo
+
 load_dotenv()
+
+QUEUE=QueueInfo()
 
 # Discord Developer Portal bot token
 BOTTOKEN = os.getenv('BOTTOKEN')

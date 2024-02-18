@@ -10,7 +10,7 @@ class LogListener(commands.Cog):
     def __init__(self, bot):
         self.bot: disnake.Client = bot
         self.log: settings.logging = settings.log
-        self.queue_info: QueueInfo = QueueInfo()
+        self.queue_info: QueueInfo = settings.QUEUE
         self.persistent_views_added = False
 
     async def cog_load(self) -> None:

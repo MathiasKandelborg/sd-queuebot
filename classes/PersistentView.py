@@ -18,7 +18,7 @@ class PersistentView(disnake.ui.View):
         self.queueEnabled: bool = True
         self.client: disnake.Client = client
         self.log: settings.logging = settings.log
-        self.queue_info: QueueInfo = QueueInfo()
+        self.queue_info: QueueInfo = settings.QUEUE
         super().__init__(*args, **kwargs)
 
 # This is the Join/Leave button and its functions
